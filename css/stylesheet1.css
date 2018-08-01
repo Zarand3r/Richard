@@ -109,7 +109,7 @@ body {
     transition-duration: 4s;
     min-height:1000px;
     width:100%;
-    background-color: blanchedalmond;
+    background-color: #e6f9ff;
     z-index:10;
     overflow:hidden;
 }
@@ -121,9 +121,6 @@ body {
 }
 .content h1,h2,h3,h4,h5,h6{
     margin:0 auto;
-}
-.content h1:hover   {
-    opacity:0.5;
 }
 
 .content .text p {

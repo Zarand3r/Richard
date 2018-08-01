@@ -54,7 +54,8 @@ li {
 }
 
 .genesis-nav-menu a:hover {
-	color: #a0ac48;
+	/* color: #a0ac48; */
+	opacity: 0.5;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -175,7 +176,7 @@ li {
 }
 
 .nav-primary.fixed + div {
-	border-top: 74px solid transparent;	
+	border-top: 74px solid transparent;
 }
 
 .nav-primary .small-site-title {
@@ -234,11 +235,11 @@ li {
     position:fixed;
     width:100%;
     z-index:1000;
-    border-bottom:2px solid burlywood !important;
+    border-bottom:2px solid LightSteelBlue !important;
 }
 .colorchange    {
-    background: floralwhite; 
+    background: Azure;
 }
 .colorchange:hover  {
-    background: cornsilk;//ivory;
+    background: #fff;
 }
