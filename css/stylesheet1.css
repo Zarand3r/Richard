@@ -54,7 +54,7 @@ body {
     width:100%;
     padding:0;
     background: black;
-    opacity:0.1;
+    opacity:0;
 }
 
 #title  {
@@ -112,6 +112,7 @@ body {
     background-color: #e6f9ff;
     z-index:10;
     overflow:hidden;
+    padding-top: 150px;
 }
 
 .content h1 {
@@ -126,9 +127,9 @@ body {
 .content .text p {
     color: steelblue;
     font-size:20px;
-    transition: color 1s ease-in-out;
+    /* transition: color 1s ease-in-out;
    -moz-transition: color 1s ease-in-out;
-   -webkit-transition: color 1s ease-in-out;
+   -webkit-transition: color 1s ease-in-out; */
 }
 .content .text h3 {
     color: #333333;
