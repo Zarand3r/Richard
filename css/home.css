@@ -80,6 +80,13 @@ body {
 #title h1:hover {
     color: blanchedalmond;
 }
+
+header  {
+  position:absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
 #navbar {
     -moz-animation-name: lowerHeader;
     -moz-animation-iteration-count: 1;

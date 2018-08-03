@@ -5,94 +5,6 @@
      font-family:"Open Sans";
  }
 
- #navbar {
-     -moz-animation-name: lowerHeader;
-     -moz-animation-iteration-count: 1;
-     -moz-animation-timing-function: ease-in;
-     -moz-animation-duration: 1s;
-
-     -webkit-animation-name: lowerHeader;
-     -webkit-animation-iteration-count: 1;
-     -webkit-animation-timing-function: ease-in;
-     -webkit-animation-duration: 1s;
-
-     animation-name: lowerHeader;
-     animation-iteration-count: 1;
-     animation-timing-function: ease-in;
-     animation-duration: 1s;
- }
- #navarea    {
-     -webkit-transition: background 1s linear;
-     -moz-transition: background 1s linear;
-     -o-transition: background 1s linear;
-     transition: background 1s linear;
- }
- .content {
-     -webkit-transition-duration: 4s;
-     -moz-transition-duration: 4s;
-     -o-transition-duration: 4s;
-     transition-duration: 4s;
-     width:100%;
-     z-index:10;
-     overflow:hidden;
-     padding-top: 150px;
-     padding-bottom: 50px;
- }
-
- .content h1 {
-     text-align:center;
-     color:gray;
-     font-size:50px;
- }
- .content h1,h2,h3,h4,h5,h6{
-     margin:0 auto;
- }
-
- .content .text h3 {
-     color: #333333;
- }
-
- .content .text p {
-     color: steelblue;
-     font-size:20px;
-}
-
- @-moz-keyframes lowerHeader {
-     0% {
-         -moz-transform: translateY(-75px);
-         opacity:0.1;
-     }
-     100% {
-         -moz-transform: translateY(0);
-         opacity:1;
-     }
- }
- @-webkit-keyframes lowerHeader {
-     0% {
-         -webkit-transform: translateY(-75px);
-         opacity:0.1;
-     }
-     100% {
-         -webkit-transform: translateY(0);
-         opacity:1;
-     }
- }
- @keyframes lowerHeader {
-     0% {
-         transform: translateY(-75px);
-         opacity:0.1;
-     }
-     100% {
-         transform: translateY(0);
-         opacity:1;;
-     }
- }
-
-
-
-
-
-
 html,
 body,
 #fullpage,
@@ -146,17 +58,96 @@ abbr,acronym { border: 0;
 
 /* Custom CSS
  * --------------------------------------- */
-body{
-	font-family: arial,helvetica;
-	color: #333;
-	color: rgba(0,0,0,0.5);
+
+header  {
+ position:absolute;
+ width: 100%;
+ z-index: 1000;
 }
-.wrap{
-	margin-left: auto;
-	margin-right: auto;
-	width: 960px;
-	position: relative;
+
+#navbar {
+    -moz-animation-name: lowerHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 1s;
+
+    -webkit-animation-name: lowerHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+
+    animation-name: lowerHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 }
+#navarea    {
+    -webkit-transition: background 1s linear;
+    -moz-transition: background 1s linear;
+    -o-transition: background 1s linear;
+    transition: background 1s linear;
+}
+.content {
+    -webkit-transition-duration: 4s;
+    -moz-transition-duration: 4s;
+    -o-transition-duration: 4s;
+    transition-duration: 4s;
+    width:100%;
+    z-index:10;
+    overflow:hidden;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.content h1 {
+    text-align:center;
+    color:gray;
+    font-size:50px;
+}
+.content h1,h2,h3,h4,h5,h6{
+    margin:0 auto;
+}
+
+.content .text h3 {
+    color: #333333;
+}
+
+.content .text p {
+    color: steelblue;
+    font-size:20px;
+}
+
+@-moz-keyframes lowerHeader {
+    0% {
+        -moz-transform: translateY(-75px);
+        opacity:0.1;
+    }
+    100% {
+        -moz-transform: translateY(0);
+        opacity:1;
+    }
+}
+@-webkit-keyframes lowerHeader {
+    0% {
+        -webkit-transform: translateY(-75px);
+        opacity:0.1;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity:1;
+    }
+}
+@keyframes lowerHeader {
+    0% {
+        transform: translateY(-75px);
+        opacity:0.1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity:1;;
+    }
+}
+
 /* p{
 	font-size: 2em;
 } */
@@ -188,6 +179,13 @@ header {
     transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 100;
+}
+
+section {
+  background-color: aliceblue;
+  min-height: 1000px;
+  width: 100%;
+  text-align: center;
 }
 
 
