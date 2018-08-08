@@ -7,8 +7,7 @@
 
 html,
 body,
-#fullpage,
-.section{
+#fullpage{
   height: 100%;
 }
 
@@ -56,7 +55,7 @@ abbr,acronym { border: 0;
 }
 
 
-/* Custom CSS
+/* General
  * --------------------------------------- */
 
 header  {
@@ -86,35 +85,6 @@ header  {
     -moz-transition: background 1s linear;
     -o-transition: background 1s linear;
     transition: background 1s linear;
-}
-.content {
-    -webkit-transition-duration: 4s;
-    -moz-transition-duration: 4s;
-    -o-transition-duration: 4s;
-    transition-duration: 4s;
-    width:100%;
-    z-index:10;
-    overflow:hidden;
-    padding-top: 150px;
-    padding-bottom: 50px;
-}
-
-.content h1 {
-    text-align:center;
-    color:gray;
-    font-size:50px;
-}
-.content h1,h2,h3,h4,h5,h6{
-    margin:0 auto;
-}
-
-.content .text h3 {
-    color: #333333;
-}
-
-.content .text p {
-    color: steelblue;
-    font-size:20px;
 }
 
 @-moz-keyframes lowerHeader {
@@ -152,23 +122,6 @@ header  {
 	font-size: 2em;
 } */
 
-.section{
-	text-align:center;
-}
-.section h1 {
-  font-size: 6em;
-}
-
-
-.content   {
-  margin: 0 auto;
-}
-
-.content p {
-  text-align: left;
-  font-size: 1em;
-}
-
 .nav-up {
   top:-75px;
 }
@@ -181,11 +134,54 @@ header {
     z-index: 100;
 }
 
-section {
+.section {
   background-color: aliceblue;
-  min-height: 1000px;
+  min-height: 100%;
   width: 100%;
   text-align: center;
+  position: relative;
+}
+
+.section h1 {
+  padding-top: 100px;
+  font-size: 3em;
+}
+
+.content {
+  -webkit-transition-duration: 4s;
+  -moz-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  transition-duration: 4s;
+  width:100%;
+  z-index:10;
+  overflow:hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 1em;
+  margin: 0 auto;
+}
+
+.content p {
+  text-align: left;
+  font-size: 1em;
+}
+
+.content h1 {
+    text-align:center;
+    color:gray;
+    font-size:2em;
+}
+.content h1,h2,h3,h4,h5,h6{
+    margin:0 auto;
+}
+
+.content .text h3 {
+    color: #333333;
+}
+
+.content .text p {
+    color: steelblue;
+    font-size:20px;
 }
 
 
@@ -302,4 +298,33 @@ section {
 #myFooter {
   flex: 0 0 auto;
   -webkit-flex: 0 0 auto;
+}
+
+/*Custom CSS
+---------------*/
+#portfoliocover {
+  width: 100%;
+  height: 80%;
+  background: url(../images/space1.jpg) no-repeat center center;
+  background-color:aliceblue;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:0;
+  margin:0;
+}
+
+#researchcover  {
+  width: 100%;
+  height: 80%;
+  background-color: blue;
+  background: url(../images/science1.jpg) no-repeat center center;
+  background-color:aliceblue;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:0;
+  margin:0;
 }
