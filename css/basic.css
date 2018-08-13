@@ -126,6 +126,10 @@ header  {
   top:-75px;
 }
 
+.nav-upper {
+  top:-150px
+}
+
 header {
     position: fixed;
     top: 0;
@@ -330,4 +334,64 @@ header {
 .first  {
   background-color: #f2f2f2;
   height: 100%;
+}
+
+
+.grid {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.row {
+    padding: 50px;
+}
+.browseRow .cell {
+    height: 300px;
+    min-width: 250px;
+    padding: 1%;
+    -webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+    float: left;
+    width: 25%;
+}
+.browseRow .cell:hover  {
+    opacity:0.8;
+}
+.browseRow .cell .panel {
+    height: 100%;
+}
+.browseRow .cell .panel .panel-body {
+    font-size: 36px;
+    text-align: center;
+    line-height: 248px;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+
+@media (max-width: 1200px) {
+    .grid {
+        /* width: 1170px; */
+    }
+    .browseRow .cell  {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 900px) {
+    .browseRow .cell  {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .row  {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .browseRow .cell  {
+        width: 100%;
+    }
 }
