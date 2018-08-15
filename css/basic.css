@@ -143,13 +143,36 @@ header {
   min-height: 100%;
   width: 100%;
   text-align: center;
-  position: relative;
+  overflow: auto;
 }
 
 .section h1 {
   padding-top: 100px;
   font-size: 3em;
 }
+
+.rigidSection {
+  background-color: aliceblue;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow:hidden;
+}
+
+.rigidSection h1 {
+  padding-top: 100px;
+  font-size: 3em;
+}
+
+.rigidSection:nth-child(even) {
+    background-color: white;
+}
+
+.rigidSection:nth-child(1) {
+    background-color: #f2f2f2;
+}
+
 
 .content {
   -webkit-transition-duration: 4s;
@@ -331,11 +354,6 @@ header {
   margin:0;
 }
 
-.first  {
-  background-color: #f2f2f2;
-  height: 100%;
-}
-
 
 .grid {
   max-width: 1500px;
@@ -347,7 +365,7 @@ header {
 .row {
     padding: 50px;
 }
-.browseRow .cell {
+.row .cell {
     height: 300px;
     min-width: 250px;
     padding: 1%;
@@ -356,13 +374,13 @@ header {
     float: left;
     width: 25%;
 }
-.browseRow .cell:hover  {
+.row .cell:hover  {
     opacity:0.8;
 }
-.browseRow .cell .panel {
+.row .cell .panel {
     height: 100%;
 }
-.browseRow .cell .panel .panel-body {
+.row .cell .panel .panel-body {
     font-size: 36px;
     text-align: center;
     line-height: 248px;
@@ -375,13 +393,13 @@ header {
     .grid {
         /* width: 1170px; */
     }
-    .browseRow .cell  {
+    .row .cell  {
         width: 33.333%;
     }
 }
 
 @media (max-width: 900px) {
-    .browseRow .cell  {
+    .row .cell  {
         width: 50%;
     }
 }
@@ -391,7 +409,74 @@ header {
       padding-left: 20px;
       padding-right: 20px;
     }
-    .browseRow .cell  {
+    .row .cell  {
         width: 100%;
     }
+}
+
+
+.blogList {
+    width: 100%;
+    margin-top: 100px;
+    padding: 100px;
+    overflow:auto;
+}
+
+.blogList .col-sm-12 {
+    text-align: left;
+    height: 300px;
+    min-width: 250px;
+    padding: 1%;
+    -webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+    float: left;
+}
+.blogList .col-sm-12:hover  {
+    opacity:0.8;
+}
+
+
+.col-sm-12 {
+    height: 300px;
+    background: white;
+    margin-bottom: 0;
+}
+.col-sm-12 .entry {
+    padding: 20px;
+    border-radius: 0px;
+    height: 100%;
+}
+
+.col-sm-12 .entry a img {
+    height: 100%;
+    width: 35%;
+}
+@media all and (max-width:800px) {
+    .col-sm-12 .entry a img {
+        height: auto;
+    }
+    .col-sm-12  {
+        width: 100%;
+    }
+    .blogList {
+      padding:0px;
+    }
+}
+
+.col-sm-12 .entry .text {
+  width: 55%;
+  height: 100%;
+  float:right;
+  overflow: hidden;
+}
+
+.col-sm-12 .entry .text a h3 {
+    font-size: 2em;
+    color: black;
+}
+.col-sm-12 .entry .text a h3:hover {
+    text-decoration: underline;
+}
+.col-sm-12 .entry .text article {
+    margin-top: 20px;
 }
