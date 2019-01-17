@@ -23,7 +23,7 @@ $( document ).ready(function() {
   var na = $('#navarea');
 
   if ($(this).scrollTop() < navpos) {
-      $("#container").html('<div id="preloader"><img id="mypic" alt ="mypic" src ="images/cover.jpg"/></div>');
+      $("#container").html('<div id="preloader"><img id="mypic" alt ="mypic" src ="images/2.jpg"/></div>');
   }
   $(window).scroll(function () {
       if ($(this).scrollTop() >= navpos) {
