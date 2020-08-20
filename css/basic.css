@@ -224,7 +224,7 @@ header {
     margin:0 auto;
     padding-left: 50px;
     padding-right: 50px;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .content .text h3 {
@@ -408,8 +408,9 @@ header {
 }
 
 .grid {
-  max-width: 1500px;
+  max-width: 2500px;
   margin: 0 auto;
+  background: blue;
 }
 
 .row {
@@ -471,7 +472,24 @@ header {
     color: lightblue;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1500px) {
+    .grid {
+    }
+    .row .cell  {
+        width: 20%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .grid {
+    }
+    .row .cell  {
+        width: 16.666%;
+    }
+}
+
+
+@media (max-width: 1300px) {
     .grid {
         /* width: 1170px; */
     }
